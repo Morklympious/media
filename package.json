@@ -1,0 +1,24 @@
+{
+  "name": "mediajs",
+  "version": "1.0.0",
+  "description": "A functional library to simplify media event scripting",
+  "main": "media.js",
+  "scripts": {
+    "test": "mocha test/js",
+    "test-watch": "mocha -w test/js"
+  },
+  "keywords": [
+    "media",
+    "DOM",
+    "html"
+  ],
+  "author": "Bradley Stafford",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "http-server": "^0.8.0",
+    "mocha": "^2.3.2",
+    "webpack": "^1.12.2",
+    "zombie": "^4.1.0"
+  }
+}
