@@ -22,8 +22,10 @@ Determines whether or not the media object __is__ in some specific state.
 This returns a boolean. Mostly for validation/existence checking.
 
 #### examples
-`media.is(audio, 'paused') // true if paused, false if playing`
-`media.is(audio, 'muted') // true if volume is at 0`
+````js
+media.is(audio, 'paused') // true if paused, false if playing
+media.is(audio, 'muted') // true if volume is at 0
+````
 
 ### `.has(media, prop)`
 
@@ -32,8 +34,10 @@ user-friendly way for you to determine whether or not a media object __has__ som
 property that _grammatically_ works better with `has()`
 
 #### examples
-`media.has(video, 'controls') // true if controls are enabled via HTML/JS`
-`media.has(video, 'error') // true if an error occured`
+````js
+media.has(video, 'controls') // true if controls are enabled via HTML/JS
+media.has(video, 'error') // true if an error occured
+````
 
 ### `.prop(media, prop, value)`
 
@@ -42,11 +46,13 @@ the `prop` property on the `media` object is made. Otherwise, a value is just
 returned. You're only going to be able to modify mutable values!
 
 #### examples
-`media.prop(audio, 'currentTime') // returns current seek time`
-`media.prop(audio, 'currentTime', 50) // sets currentTime at 50 seconds`
+````js
+media.prop(audio, 'currentTime') // returns current seek time
+media.prop(audio, 'currentTime', 50) // sets currentTime at 50 seconds
 
-`media.prop(video, 'muted', true) // mutes the video`
-`media.prop(video, 'paused') // retrieved`
+media.prop(video, 'muted', true) // mutes the video
+media.prop(video, 'paused') // retrieved
+````
 
 ### `.perform(media, command)`
 
@@ -54,11 +60,12 @@ This is a function that's used to call functions that are otherwise hardcoded in
 the object, it's a simple interface that'll call the function you reference.
 
 #### examples
-`media.perform(audio, 'play')`
-`media.perform(audio, 'pause')`
+````js
+media.perform(audio, 'play')
+media.perform(audio, 'pause')
 
-`media.perform(video, 'load')`
-
+media.perform(video, 'load')
+````
 EZPZ!
 
 ## Notes
