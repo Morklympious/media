@@ -69,5 +69,5 @@ media.perform(video, 'load')
 EZPZ!
 
 ## Notes
-Feel free to contribute to tests or if you have any suggestions on improvement in any way
+Feel free to contribute to tests or if you have any suggestions on improvement in any way,
 I'd love to talk about it!
