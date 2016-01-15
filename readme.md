@@ -66,7 +66,8 @@ media.perform(audio, 'pause')
 
 media.perform(video, 'load')
 ````
-EZPZ!
+
+There are also three alias methods that use `.perform()` internally: `.play(media)`, `.pause(media)`, and `toggle(media)` (for toggling play/pause)
 
 ## Notes
 Feel free to contribute to tests or if you have any suggestions on improvement in any way,
